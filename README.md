@@ -22,4 +22,4 @@ Bird Owners: are interested in the relational needs of their bird to ensure prop
 
 The website content is predetermined per the requirements of the project (Western Governors University, 2022)- as you would expect from a real-world project.
 
-All of the code in this project was written by Monica Nieckula (www.mrez.dev) and no templates were used.
+All of the code in this project was written by Monica Nieckula (www.mrez.dev) and no templates were used. This website is compliant with ADA and WCAG standards. 
