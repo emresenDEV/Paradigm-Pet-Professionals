@@ -4,7 +4,7 @@ WGU C773 User Interface Design Project
 
 The purpose of this project is to create a user interface for a dog training business. The user interface will be used by the business owner to track client information, pet information, and gain customer information to schedule consulting services.
 
-WGU provided a scenario which the student is to work on this project as if this were real-world experience. The stakeholder had website which was in desperate need of updates and fixes in order to build trust with future clientele. 
+WGU provided a scenario which the student is to work on this project as if this were real-world experience. The stakeholder had website which was in desperate need of updates and fixes in order to build trust with future clientele.
 
 As a student, I will be using this project to demonstrate my ability to create a user interface that is easy to use and meets the needs of the business owner. Taking the stakeholder's' needs into account, I will be creating a user interface that is easy to navigate and appealing to the eye. WGU provides a website that needs to be updated. It has broken links, missing images, and is not mobile-friendly. The website is also not ADA-compliant. The website needs to be updated to meet the needs of the business owner and the customers.
 
@@ -22,4 +22,62 @@ Bird Owners: are interested in the relational needs of their bird to ensure prop
 
 The website content is predetermined per the requirements of the project (Western Governors University, 2022)- as you would expect from a real-world project.
 
-All of the code in this project was written by Monica Nieckula (www.mrez.dev) and no templates were used. This website is compliant with ADA and WCAG standards. 
+All of the code in this project was written by Monica Nieckula (www.mrez.dev) and no templates were used. This website is compliant with ADA and WCAG standards.
+
+# React Conversion
+
+The initial project is a simple landing page. The project has been converted to the React Framework and uses Python and Flask.
+
+Setting up the Backend (Flask)
+
+(using Homebrew on MacOS)
+
+**Install Python:**
+
+Install Python: brew install python
+
+Create and activate a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate
+
+**Install Flask and other dependencies:**
+
+pip install flask flask_sqlalchemy flask_migrate flask_cors
+
+# Directory Structure
+
+project-root/
+│
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── routes.py
+│   │   ├── config.py
+│   ├── migrations/
+│   ├── venv/
+│   └── run.py
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.js
+│   │   ├── index.js
+│   ├── package.json
+│
+├── images/
+│   ├── ppp-logo.png
+│   ├── bird.png
+│   ├── calico-cat.png
+│   ├── black-cat.png
+│   ├── adopt-cat.png
+│   ├── two-dogs.png
+│   ├── best-friend.png
+│   ├── ipad-meeting.png
+│   ├── meeting.png
+│
+└── README.md
