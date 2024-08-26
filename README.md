@@ -28,56 +28,70 @@ All of the code in this project was written by Monica Nieckula (www.mrez.dev) an
 
 The initial project is a simple landing page. The project has been converted to the React Framework and uses Python and Flask.
 
-Setting up the Backend (Flask)
+## Backend Instructions (Flask)
 
-(using Homebrew on MacOS)
+**Setting up the Frontend:**
 
-**Install Python:**
+### **Backend (Flask) Setup and Startup**
 
-Install Python: brew install python
+1. **Ensure Python and Flask are Installed**
+   * Ensure you have Python installed, in terminal:
 
-Create and activate a virtual environment:
+     ```
+     python3 --version
+     ```
+   * Install Flask and necessary dependencies, in terminal:
 
-python3 -m venv venv
-source venv/bin/activate
+     ```
+     pip install flask flask_sqlalchemy flask_migrate flask_cors
+     ```
+2. **Activate the Virtual Environment**
+   * Navigate to the backend directory and activate the virtual environment, in terminal, from root directory:
 
-**Install Flask and other dependencies:**
+     ```
+     cd backend
+     source venv/bin/activate
+     ```
+3. **Initialize the Database**
+   * Run the following commands to set up the database:
 
-pip install flask flask_sqlalchemy flask_migrate flask_cors
+     ```
+     flask db init
+     flask db migrate -m "Initial migration"
+     flask db upgrade
+     ```
+4. **Start the Flask Server**
+   * Run the Flask application:
+     ```
+     flask run
+     ```
+   * The server will be available at `http://127.0.0.1:5000/`.
 
-# Directory Structure
+### Frontend Instructions (React)
 
-project-root/
-│
-├── backend/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── models.py
-│   │   ├── routes.py
-│   │   ├── config.py
-│   ├── migrations/
-│   ├── venv/
-│   └── run.py
-│
-├── frontend/
-│   ├── public/
-│   │   ├── index.html
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.js
-│   │   ├── index.js
-│   ├── package.json
-│
-├── images/
-│   ├── ppp-logo.png
-│   ├── bird.png
-│   ├── calico-cat.png
-│   ├── black-cat.png
-│   ├── adopt-cat.png
-│   ├── two-dogs.png
-│   ├── best-friend.png
-│   ├── ipad-meeting.png
-│   ├── meeting.png
-│
-└── README.md
+1. **Ensure Node.js and npm are Installed**
+   * Verify the installation of Node.js and npm:
+     ```
+     node --version
+     npm --version
+     ```
+2. **Navigate to the Frontend Directory**
+   * Navigate to the React project directory:
+     ```
+     cd frontend
+     ```
+3. **Install Dependencies**
+   * Install all necessary dependencies, including React Router:
+     ```
+     npm install
+     npm install react-router-dom
+     ```
+4. Start the React Application
+   * Run the React development server:
+
+     ```
+     npm start
+     ```
+     The app will be accessible at `http://localhost:3000/`
+
+     # Lessons Learned:

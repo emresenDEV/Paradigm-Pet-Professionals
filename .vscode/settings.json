@@ -1,6 +1,5 @@
 {
-    "cSpell.words": [
-        "mrez",
-        "Nieckula"
-    ]
-}
+    "python.analysis.extraPaths": ["./backend/venv/lib/python3.12/site-packages"],
+    "python.pythonPath": "backend/venv/bin/python"
+  }
+  
