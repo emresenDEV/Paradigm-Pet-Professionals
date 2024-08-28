@@ -26,7 +26,7 @@ All of the code in this project was written by Monica Nieckula (www.mrez.dev) an
 
 # React Conversion
 
-The initial project is a simple landing page. The project has been converted to the React Framework and uses Python and Flask.
+The initial project is a simple landing page. The project has been converted to the React Framework and uses Python and Flask. The functional search feature was completed via the SearchResults.js and SearchContext.js files. Using Flask-Mail, the completed contact form is emailed to Paradigm Pet Professionals. 
 
 ## Backend Instructions (Flask)
 
@@ -93,5 +93,3 @@ The initial project is a simple landing page. The project has been converted to 
      npm start
      ```
      The app will be accessible at `http://localhost:3000/`
-
-     # Lessons Learned:
