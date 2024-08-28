@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Dogs from './pages/Dogs';
 import Cats from './pages/Cats';
@@ -14,19 +14,19 @@ import Navbar from './components/Navbar';
 function App() {
     return (
         <Router>
-            <div>
+            <SearchProvider>
                 <Header />
                 <Navbar />
                 <Routes>
-                <Route path="/" exact component={Home} />
-                    <Route path="/dogs" component={Dogs} />
-                    <Route path="/cats" component={Cats} />
-                    <Route path="/birds" component={Birds} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/search-results" component={SearchResults} />
+                <Route path="/" element={<Home/>} />
+                    <Route path="/dogs" element={<Dogs/>} />
+                    <Route path="/cats" element={<Cats/>} />
+                    <Route path="/birds" element={<Birds/>} />
+                    <Route path="/contact" element={<Contact/>} />
+                    <Route path="/search-results" element={<SearchResults/>} />
                 </Routes>
                 <Footer />
-            </div>
+            </SearchProvider>
         </Router>
     );
 }
